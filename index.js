@@ -32,8 +32,9 @@ var currentLine = function (line){
     if ((x+1)<line.length){
       str+= ", ";
     }
-    return str;
+    
   }
+  return str;
   }
   else{
     return ("The line is currently empty.");
