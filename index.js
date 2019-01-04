@@ -1,5 +1,8 @@
-var takeANumber = function(num, name){
+var takeANumber = function(line, name){
   
-  return (`Welcome, ${name+1}. You are number ${num+1} in line.`);
+  line.push(name);
+  var num = line.indexOf(name);
+
+  return (`Welcome, ${name}. You are number ${num+1} in line.`);
   
 }
