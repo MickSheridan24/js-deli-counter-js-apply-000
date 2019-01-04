@@ -32,6 +32,7 @@ var currentLine = function (line){
     if ((x+1)<line.length){
       str+= ", ";
     }
+    return str;
   }
   }
   else{
