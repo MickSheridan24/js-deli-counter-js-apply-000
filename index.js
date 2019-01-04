@@ -19,12 +19,22 @@ var nowServing = function (line){
 }
 var currentLine = function (line){
   
-  let str =  ("The line is currently: ");
+  if (line.length > 0)
+  {
+    
+  
+    let str =  ("The line is currently: ");
   
   for (let x = 0; x < line.length; x++){
     
-    str += (x + ". ");
+    str += ((x+1) + ". ");
     str += (line[x]);
-    if 
+    if ((x+1)<line.length){
+      str+= ", ";
+    }
+  }
+  }
+  else{
+    return ()
   }
 }
