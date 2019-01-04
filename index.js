@@ -13,8 +13,10 @@ var nowServing = function (line){
     return "There is nobody waiting to be served!"
   }
   else{
-  return "Currently serving "+ line[0] +".";
-  line.shift();
+var str = "Currently serving "+ line[0] +"."
+line.shift();
+  return str ;
+  
   }
 }
 var currentLine = function (line){
